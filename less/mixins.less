@@ -1,0 +1,31 @@
+.position(@width, @margin){
+        width: @width;
+        margin: @margin;
+}
+
+
+.display(@display, @direction, @wrap, @justify, @align){
+    display:@display;
+    flex-direction: @direction;
+    flex-wrap: @wrap;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+
+.txt(@size, @weight, @color, @align){
+    font-size: @size;
+    font-weight: @weight;
+    color: @color;
+    text-align: @align; 
+}
+
+.cta(){
+    width: 45%;
+    height: 3rem;
+    background: @lambda-red;
+    border:none;
+    .txt(1.6rem, bold, white, center);
+    border-radius:10px;
+    margin: 1rem 0;
+}

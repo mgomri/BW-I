@@ -1,0 +1,42 @@
+
+.nav-bar{
+
+    .display(flex, row, nowrap, space-between, center);
+    border-bottom: 1px solid @lambda-red;
+    margin:2rem auto 4rem auto;
+    @media @tablet{
+        .display(flex, column, nowrap, space-around, center);
+        height:20vh;
+    }
+
+    .logo{
+        .display(flex, row, nowrap, flex-start, flex-start);
+        .txt(1.2rem, bold, @lambda-red, auto);
+        font-family: verdana, Impact;
+    }//logo.
+
+    nav{
+        .display(flex, row, nowrap, space-between, center);
+        .position(40%, 0);
+        @media @tablet{
+            width:100%;
+        }
+        
+       
+       
+    }//nav.
+}//nav-bar.
+.navbar-nav{
+    width:50%;
+    justify-content: space-between;
+    .nav-link{
+        color:@lambda-red !important;
+    }
+}
+.navbar {
+    margin: 1rem auto 5rem auto;
+    border-bottom: 1px solid @lambda-red;
+}
+.navbar-brand{
+    .txt(1rem, bold, auto, auto);
+}

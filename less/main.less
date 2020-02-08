@@ -1,0 +1,156 @@
+.main-section{
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+
+    @media @phone {
+        margin-top: 35rem;
+    }
+
+    @media @tablet{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .main-image{ 
+        background-image: linear-gradient(@school-color, @gray);
+
+        img{
+            width: 100%;
+            opacity: 0.5;
+
+            @media @phone{
+                display: none;
+            }
+        }
+
+        p{
+            position: absolute;
+            z-index: 999;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 60%;
+            text-align: center;
+            font-size: 5rem;
+            width: 75%;
+            padding: .5rem;
+            color: @white;
+
+            @media @phone {
+                color: black;
+                margin: 4rem auto;
+                font-size: 2.5rem;
+                top: 74%;
+            }
+
+            @media @tablet{
+                position: absolute;
+                z-index: 1;
+                margin: 0 auto;
+                left: 0;
+                right: 0;
+                top: 40%;
+                text-align: center;
+                font-size: 5vw;
+                color: @white;
+            }
+        }
+        
+        h1{
+            position: absolute;
+            z-index: 999;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 95%;
+            text-align: center;
+            font-size: 5rem;
+            color: @school-color;
+            background: @white;
+            border: solid @school-color 5px; 
+            border-radius: 10px;
+            width: 20%;
+            padding: .5rem;
+
+            @media @phone {
+                display: none;
+            }
+
+            @media @tablet{
+                font-size: 3em;
+                top: 75%;
+            }
+        }
+    }
+
+
+    .sign-up{
+        height: 50vh;
+        width: 100%;
+        background-color: @school-color;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+
+        @media @phone {
+            margin-top: 50rem;
+            height: 100rem;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        div{
+            width: 40%;
+            margin: 2rem;
+            border: solid @white .5rem;
+            border-radius: 10px;
+
+            @media @phone {
+                display: flex;
+                flex-wrap: wrap;
+                width: 100%;
+                justify-content: center;
+                flex-direction: column;
+            }
+
+            h1{
+                text-align: center;
+                font-size: 2rem;
+                margin-top: 1rem;
+                text-decoration: underline;
+            }
+            ul{
+                text-align: left;
+                width: 80%;
+                margin: 0 auto;
+                li{
+                    margin: 2rem 0;
+                    list-style-type: disc;
+                    list-style-position: outside;
+                    font-weight: bold;
+                    text-align: center;
+                }
+            }
+            h3{
+                display: flex;
+                text-align: center;
+                border: solid .5em @school-color;
+                border-radius: 10px;;
+                width: 20%;
+                margin: 1rem auto;
+                background-color: @white;
+                height: 3rem;
+                align-items: center;
+                justify-content: center;
+                font-weight: bold;
+            }
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
+}
+
